@@ -1,0 +1,33 @@
+这里面。    未调参   统计特征
+
+
+
+
+
+the_hour 的 数值是当前是开始的点是哪个小时，
+
+start_hour 是最后加进去的，是启动标示特征。
+
+
+
+
+
+
+        list_stat_number = [mean_t2m_12, mean_t2m_24, mean_t2m_36, min_t2m_12, min_t2m_24, min_t2m_36, max_t2m_12,
+                            max_t2m_24
+            , max_t2m_36, mean_rh2m_12, mean_rh2m_24, mean_rh2m_36, min_rh2m_12, min_rh2m_24, min_rh2m_36, max_rh2m_12,
+                            max_rh2m_24
+            , max_rh2m_36, mean_w10m_12, mean_w10m_24, mean_w10m_36, min_w10m_12, min_w10m_24, min_w10m_36, max_w10m_12,
+                            max_w10m_24
+            , max_w10m_36, t2m_13, t2m_35, rh2m_13, rh2m_35, w10m_13, w10m_35,
+                            ]
+
+        # 错了，少写个rh2m_57，算了不管了，有时间再改过来
+        list_stat_number.extend(
+            [mean_t2m_72, mean_t2m_108, min_t2m_72, min_t2m_108, max_t2m_72, max_t2m_108, mean_rh2m_72, mean_rh2m_108,
+             min_rh2m_72, min_rh2m_108, max_rh2m_72, max_rh2m_108, mean_w10m_72, mean_w10m_108, min_w10m_72,
+             min_w10m_108, max_w10m_72, max_w10m_108, t2m_57, t2m_79, t2m_57, rh2m_79, w10m_57, w10m_79])
+
+
+
+加 时间启动，一个不行就在家一个
