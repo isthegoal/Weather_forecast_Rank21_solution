@@ -48,7 +48,7 @@
         is_workday_after_24.append(0)
         is_weekday_after_24.append(0)
         is_holiday_after_24.append(1)
-        #时序特征    分别构建前面9个指标的前5个小时、前12个小时、前24小时、前36小时的均值，最大值，最小值， 比值特征（这个忘了写了）
+        #时序特征    分别构建前面9个指标的前5个小时、前12个小时、前24小时、前36小时的均值，最大值，最小值， 比值特征
         mean_t2m_12 = np.mean(t2m_data_fm.loc[index, the_before_12_hour_t2m_obs_list])
         mean_t2m_24 = np.mean(t2m_data_fm.loc[index, the_before_24_hour_t2m_obs_list])
         mean_t2m_36 = np.mean(t2m_data_fm.loc[index, the_before_36_hour_t2m_obs_list])
